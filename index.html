@@ -147,9 +147,9 @@
       <form action="https://sheetdb.io/api/v1/9hbilqmfltfr6" method="POST" id="subForm">
         
         <label for="data[name]" class="userlabels">Name of the Fan</label>
-        <input type="text" placeholder="name" name="data[name]" onchange="updateMessage(name,value)" id="nameField">
+        <input type="text" required placeholder="name" name="data[name]" onchange="updateMessage(name,value)" id="nameField">
         <label for="data[comment]" class="userlabels">Message</label>
-        <textarea name="data[comment]" onchange="updateMessage(name,value)" id="comment"></textarea>
+        <textarea name="data[comment]" required onchange="updateMessage(name,value)" id="comment"></textarea>
         <div class="g-recaptcha" data-sitekey="6LcFofkaAAAAAJDM4aYVFQl1FlfGUfZvZeG5UWqi"></div>
         <input type="submit" onclick="sendEmail()" value="Send Mail" style="margin-top: 27px;"/>
         
